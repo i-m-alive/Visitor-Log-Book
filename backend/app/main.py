@@ -9,7 +9,10 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://visitor-log-book-rho.vercel.app"],
+    allow_origins=[
+        "https://visitor-log-book-rho.vercel.app"
+    ],
+    allow_credentials=True,        # 🔥 REQUIRED
     allow_methods=["*"],
     allow_headers=["*"],
 )
