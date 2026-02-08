@@ -7,7 +7,7 @@ from typing import Optional, List
 logger = logging.getLogger("face_service")
 
 # Choose model and detector backend (opencv is safe on Windows)
-MODEL_NAME = "ArcFace"           # accurate embedding model
+MODEL_NAME = "Facenet"           # accurate embedding model
 DETECTOR_BACKEND = "opencv"      # detector backend: 'opencv','ssd','mtcnn','dlib' etc.
 # threshold for cosine similarity — tune if you see false positives/negatives
 DEFAULT_THRESHOLD = 0.60
